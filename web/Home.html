@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../docs/Imagem/download2.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Home.css">
+    <title>Padaria Paladar Nobre</title>
+</head>
+<body>
+    <header>
+        <a href="carrinho.html">
+            <button class="carrinho-btn" aria-label="Abrir carrinho">
+                <img src="../docs/Imagem/carrinho-carrinho1-removebg-preview.png" alt="Ícone do carrinho" class="carrinho-img">
+            </button>
+        </a>
+
+        <h1>Paladar Nobre</h1>
+
+        <nav>
+            <button onclick="menu.classList.remove('oculto')">=</button>
+            <a href="cardapio.html"><button onclick="cardapio.classList.remove('oculto')" aria-label="Abrir cardápio">Cardápio</button></a>
+            <a href="cadastro.html"> <button onclick="login.classList.remove('oculto')" aria-label="Entrar ou cadastrar">Entrar ou Cadastrar</button></a>
+        </nav>
+    </header>
+
+
+    <section id="menu" class="modal oculto">
+        <div class="janela">
+            <div>
+                <h2>Menu</h2>
+                <button onclick="window.location.reload()">X</button>
+            </div>
+            <form>
+                <button onclick="inicio">Inicio</button>
+                <button onclick="cardapio">Cardápio</button>
+                <button onclick="login">Cadastrar</button>
+                <button onclick="login">entrar</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+       <h2> By Steffany, Thamye, João Victor, Rebeca e Pedro H.!</h2>
+    </footer>
+
+    <script src="../scripts/Home.js"></script>
+</body>
+</html>
